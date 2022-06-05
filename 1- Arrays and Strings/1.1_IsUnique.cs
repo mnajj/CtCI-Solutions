@@ -24,15 +24,15 @@ bool IsUnique(string str)
 /// </summary>
 bool IsUnique2(string str)
 {
-	var flag = 0;
+	var checker = 0;
 	foreach (var ch in str)
 	{
 		var val = ch - 'a';
-		if ((flag & (1 << val)) > 0)
+		if ((checker & (1 << val)) > 0)
 		{
 			return false;
 		}
-		flag |= (1 << val);
+		checker |= (1 << val);
 	}
 	return true; 
 }
