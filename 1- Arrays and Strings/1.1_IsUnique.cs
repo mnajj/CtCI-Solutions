@@ -34,5 +34,5 @@ bool IsUnique2(string str)
 		}
 		flag |= (1 << val);
 	}
-	return true;
+	return true; 
 }
